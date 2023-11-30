@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Party Organizer</title>
+</head>
+<body>
+    <div id="party-list">
+        <!-- Party list will be displayed here dynamically -->
+    </div>
+
+    <form id="party-form">
+        <label for="partyName">Party Name:</label>
+        <input type="text" id="partyName" required>
+
+        <label for="partyDate">Date:</label>
+        <input type="date" id="partyDate" required>
+
+        <label for="partyTime">Time:</label>
+        <input type="time" id="partyTime" required>
+
+        <label for="partyLocation">Location:</label>
+        <input type="text" id="partyLocation" required>
+
+        <label for="partyDescription">Description:</label>
+        <textarea id="partyDescription" required></textarea>
+
+        <button type="button" onclick="addParty()">Add Party</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
